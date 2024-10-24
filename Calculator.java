@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class SimpleCalculator {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        double number1, number2;
+        double number1;
+        double number2;
         char operator;
         System.out.println("sonam: ");
         System.out.println("Enter first number: ");
@@ -26,6 +27,7 @@ public class SimpleCalculator {
                 result = num1 / num2;
             } else {
                 System.out.println("Error: Division by zero is not allowed.");
+                System.out.println("Enter another number");
                 return;
             }
         } else {
